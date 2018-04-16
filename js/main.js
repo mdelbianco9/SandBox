@@ -22,3 +22,18 @@ function scramble() {
 	document.getElementById("test").innerHTML = scrambled;
 }
 
+// Takes a string and returns the longest word
+function LongestWord(sen) { 
+  var arr = sen.match(/[a-z0-9]+/gi);
+   
+   var sort = arr.sort(function(a,b) {
+       return b.length - a.length;
+   })
+   
+         return sort[0]
+}
+   
+// keep this function call here 
+LongestWord(readline());                            
+
+
