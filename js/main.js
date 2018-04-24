@@ -44,6 +44,69 @@ function sorter(a,b,c) {
   })
   return arr
 };
-
-
 console.log(sorter(13,-40,9));
+
+
+// Checks if [i] is even or odd
+function sorter() {
+  for(i=0; i<=15; i++) {
+   if([i]%2){
+    console.log([i] + " is " + "even");
+   }else{
+     console.log([i] + " is " + "odd");
+   }
+  }
+};
+
+
+console.log(sorter());
+
+
+// Assigns grades to scores
+var names = [
+  {
+    name: "David",
+    mark: 80
+  },
+  {
+    name: "Vinoth",
+    mark: 77
+  },
+  {
+    name: "Divya",
+    mark: 88
+  },
+  {
+    name: "Ishitha",
+    mark: 95
+  },
+  {
+    name: "Thomas",
+    mark: 68
+  }
+]; 
+
+function computeGrades() {
+  for(i=0; i<=names.length; i++){
+    if(names[i].mark < 60) {
+      console.log(names[i].name + "Gets an F");
+    }else if(names[i].mark < 70 && names[i].mark > 59){
+      console.log(names[i].name + "gets a D");
+    }else if(names[i].mark < 80 && names[i].mark > 69 ){
+      console.log(names[i].name + "gets a C");
+    }else if(names[i].mark < 90 && names[i].mark > 79){
+      console.log(names[i].name + "gets a B");
+    }else if(names[i].mark < 100 && names[i].mark > 89){
+      console.log(names[i].name + "gets an A");
+    }
+      
+      }
+    
+};
+
+console.log(computeGrades());
+
+
+
+
+
