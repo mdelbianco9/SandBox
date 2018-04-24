@@ -36,4 +36,14 @@ function LongestWord(sen) {
 // keep this function call here 
 LongestWord(readline());                            
 
+// Sorts 3 numbers
+function sorter(a,b,c) {
+  var arr = [a,b,c];
+  arr.sort(function(a,b) {
+    return b-a
+  })
+  return arr
+};
 
+
+console.log(sorter(13,-40,9));
