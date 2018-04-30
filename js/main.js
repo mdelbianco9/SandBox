@@ -124,5 +124,30 @@ function fizbuz() {
   }
 };
 
+// Calculates an Armstrong Number
+/* if the number is an armstrong number, Print "Its an A num" */
+
+/* If its not an arm sum then print "not arm num" */
+
+/* Take the number, separate each number, then run the calculation */
+
+function armNum(a) {
+  var b = a;
+  var num = a.toString().split("");
+  var digits = num.map(Number);
+  
+  var one = Math.pow(digits[0], 3);
+  var two = Math.pow(digits[1], 3);
+  var three = Math.pow(digits[2], 3);
+  
+  if(one + two + three === b) {
+    console.log(b + " is an Armstrong Number")
+  }else{
+  console.log(b + " Is NOT an Armstrong Number")
+  }
+  
+};
+
+armNum(371);
 
 
